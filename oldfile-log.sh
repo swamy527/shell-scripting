@@ -13,10 +13,10 @@ then
     exit 1
 fi
 
-files-delete=$(find $source -type f -mtime +14 -name "*.log")
+files_delete=$(find $source -type f -mtime +14 -name "*.log")
 
 while IFS= read -r line
 do
   echo "deleting file: $line"
   rm -rf $line
-done <<< $files-delete
+done <<< $(files_delete
