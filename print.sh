@@ -2,7 +2,7 @@
 
 file=/etc/passwd
 
-if [ ! -f $file]
+if [ ! -f $file ]
 then
     echo -e "$file not exists"
 fi
