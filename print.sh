@@ -11,5 +11,5 @@ while IFS=":" read -r username password userid groupid
 do
   echo -e " user name is : $username"
   echo -e "password is : $password"
-  echo -e "user id : $userid"
+  echo -e "user id : $userid\n"
 done < $file
